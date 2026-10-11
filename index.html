@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoya General Store</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #fff8fb;
+            color: #333;
+        }
+
+        header {
+            background: #e84393;
+            color: white;
+            text-align: center;
+            padding: 25px 10px;
+        }
+
+        header h1 {
+            font-size: 32px;
+            margin-bottom: 8px;
+        }
+
+        nav {
+            background: #c72c7b;
+            padding: 14px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 12px;
+            font-weight: bold;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 55px 20px;
+            background: linear-gradient(135deg, #ffe0ef, #fff0f6);
+        }
+
+        .hero h2 {
+            color: #c72c7b;
+            font-size: 30px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 17px;
+            line-height: 1.7;
+        }
+
+        .section-title {
+            text-align: center;
+            color: #c72c7b;
+            margin: 35px 10px 25px;
+            font-size: 28px;
+        }
+
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .product {
+            background: white;
+            text-align: center;
+            padding: 25px 15px;
+            border-radius: 15px;
+            box-shadow: 0 4px 14px #00000012;
+            border: 1px solid #f7d6e5;
+        }
+
+        .product .emoji {
+            font-size: 55px;
+            margin-bottom: 12px;
+        }
+
+        .product h3 {
+            margin-bottom: 10px;
+        }
+
+        .price {
+            color: #e84393;
+            font-size: 20px;
+            font-weight: bold;
+            margin: 12px 0;
+        }
+
+        .contact {
+            background: #ffe0ef;
+            text-align: center;
+            padding: 35px 15px;
+            margin-top: 35px;
+            line-height: 2;
+        }
+
+        .contact h2 {
+            color: #c72c7b;
+            margin-bottom: 12px;
+        }
+
+        footer {
+            background: #c72c7b;
+            color: white;
+            text-align: center;
+            padding: 18px;
+        }
+
+        @media (max-width: 500px) {
+            header h1 {
+                font-size: 26px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 7px;
+            }
+
+            .hero h2 {
+                font-size: 25px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>🌸 Zoya General Store 🌸</h1>
+        <p>Jewellery • Toys • Gifts • Accessories</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section class="hero" id="home">
+        <h2>Welcome to Zoya General Store!</h2>
+        <p>
+            Discover beautiful jewellery, cute toys and special gifts.
+            <br>
+            Aapki pasand, hamari priority! 💗
+        </p>
+    </section>
+
+    <h2 class="section-title" id="products">Our Products 🛍️</h2>
+
+    <section class="products">
+
+        <div class="product">
+            <div class="emoji">💍</div>
+            <h3>Fashion Jewellery</h3>
+            <p>Beautiful jewellery for every occasion.</p>
+            <div class="price">Starting ₹99</div>
+        </div>
+
+        <div class="product">
+            <div class="emoji">📿</div>
+            <h3>Necklaces</h3>
+            <p>Stylish necklaces to complete your look.</p>
+            <div class="price">Starting ₹149</div>
+        </div>
+
+        <div class="product">
+            <div class="emoji">🧸</div>
+            <h3>Soft Toys</h3>
+            <p>Lovely soft toys for kids and gifts.</p>
+            <div class="price">Starting ₹199</div>
+        </div>
+
+        <div class="product">
+            <div class="emoji">🎁</div>
+            <h3>Gift Items</h3>
+            <p>Special gifts for your special people.</p>
+            <div class="price">Starting ₹99</div>
+        </div>
+
+        <div class="product">
+            <div class="emoji">🎀</div>
+            <h3>Hair Accessories</h3>
+            <p>Beautiful clips, bands and hair accessories.</p>
+            <div class="price">Starting ₹49</div>
+        </div>
+
+        <div class="product">
+            <div class="emoji">👜</div>
+            <h3>Fashion Accessories</h3>
+            <p>Trendy accessories for your daily style.</p>
+            <div class="price">Starting ₹99</div>
+        </div>
+
+    </section>
+
+    <section class="contact" id="about">
+        <h2>About Zoya General Store</h2>
+        <p>
+            We offer jewellery, toys, gifts and fashionable accessories
+            for your everyday needs and special occasions.
+        </p>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>Contact Us 📞</h2>
+        <p>For product enquiries and orders, contact our store.</p>
+        <p>Phone: Add your mobile number here</p>
+        <p>Address: Add your shop address here</p>
+    </section>
+
+    <footer>
+        <p>© 2026 Zoya General Store. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
